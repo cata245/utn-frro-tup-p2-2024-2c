@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Países</title>
+</head>
+<body>
+    <h1>Selección de Países</h1>
+    <form action="/enviar-datos" method="post">
+        <label for="paises">Selecciona un país:</label>
+        <select id="paises" name="pais">
+            <optgroup label="América">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="México">México</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="Alemania">Alemania</option>
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Italia">Italia</option>
+                <option value="Reino Unido">Reino Unido</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
