@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var frase = prompt("Introduce una frase:");
+        var vocales = "aeiou";
+        var vocalesEncontradas = "";
+        for (var i = 0; i < vocales.length; i++) {
+            if (frase.toLowerCase().includes(vocales[i])) {
+                vocalesEncontradas += vocales[i] + " ";
+            }
+        }
+        document.write("Las vocales que aparecen son: " + vocalesEncontradas.trim());
+    </script>
+</body>
+</html>

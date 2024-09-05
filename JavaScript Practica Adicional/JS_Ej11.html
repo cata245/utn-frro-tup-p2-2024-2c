@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var frase = prompt("Introduce una frase:");
+        var vocales = "aeiou";
+        var contadorVocales = 0;
+        for (var i = 0; i < frase.length; i++) {
+            var letra = frase[i].toLowerCase();
+            if (vocales.includes(letra)) {
+                contadorVocales++;
+            }
+        }
+        document.write("El número de vocales en la frase es: " + contadorVocales);
+    </script>
+</body>
+</html>
