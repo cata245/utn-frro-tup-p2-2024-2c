@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil personal</title>
+    <link rel="stylesheet" href="HTML_EjGlobalizador.css">
+</head>
+<body>
+    <header>
+        <h1>Catalina Borda</h1>
+    </header>
+    <div class="container">
+        <img src="HTML_EjGlobalizador\loro.jpg" alt="Imagen de perfil de Catalina Borda" class="profile-pic">     
+        <div class="main-content">
+            <div class="info">
+                <p>Soy Catalina Borda, estudiante de la Tecnicatura Universitaria en Programación y el Profesorado de Educación Secundaria de Informática.</p>
+                
+                <h2>Intereses</h2>
+                <ul class="interests">
+                    <li>Leer</li>
+                    <li>Escribir</li>
+                    <li>Películas</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <table>
+                    <tr>
+                        <th>Email</th>
+                        <td>catalinaborda38@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Teléfono</th>
+                        <td>+54 341 638 6064</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <h2>Redes Sociales</h2>
+            <a href="https://facebook.com/catalinaborda" target="_blank">Facebook</a>
+            <a href="https://twitter.com/catalinaborda" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/in/catalinaborda" target="_blank">LinkedIn</a>
+        </div>
+
+        <h2>Formulario de Contacto</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
